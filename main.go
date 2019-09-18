@@ -15,7 +15,7 @@ func main() {
   x := gojieba.NewJieba()
   defer x.Free()
   use_hmm := true
-  content := utils.ReadFileAsString("data/analyse_articles/简书一年，我出版了一本书.txt")
+  content := utils.ReadFileAsString("data/analyze_articles/中国小伙勇闯印度最大贫民窟，几千人共用一个厕所.txt")
   words = x.Cut(content, use_hmm)
   // log.Info(words)
   excludes = utils.ReadFileByLine("data/stopwords/中文停用词表.txt")
@@ -44,7 +44,7 @@ func main() {
   wordResult := utils.RankByValue(wordCount)[0:30]
   log.Info(wordResult)
   // load the ref words
-  analysis := utils.ReadJson("data/analyse_reference/analysis.json")
+  analysis := utils.ReadJson("data/analyze_reference/analysis.json")
   lanWords := analysis.Language
   lanCount := utils.Count(wordResult, lanWords)
   frameWords := analysis.Framework
