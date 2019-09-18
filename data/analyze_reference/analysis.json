@@ -1,0 +1,43 @@
+{
+  "Language": [
+    "c",
+    "c++",
+    "c#",
+    "java",
+    "golang",
+    "python",
+    "javascript",
+    "ruby",
+    "rust",
+    "lua",
+    "php",
+    "objective-c",
+    "kotlin",
+    "swift"
+  ],
+  "Framework": [
+    "vue",
+    "react",
+    "angular",
+    "spring",
+    "django"
+  ],
+  "MarchineLearning": [
+    "tensorflow"
+  ],
+  "ArtificialIntelligence": [
+    "人工智能"
+  ],
+  "ReadingWriting": [
+    "读书",
+    "写作",
+    "文章",
+    "小说",
+    "散文",
+    "剧本",
+    "写"
+  ],
+  "RecordLife": [
+    ""
+  ]
+}
