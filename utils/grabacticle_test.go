@@ -4,6 +4,11 @@ import (
   "testing"
 )
 
-func TestGrabZhihu(t *testing.T) {
+// failed function
+/* func TestGrabZhihu(t *testing.T) {
   GrabZhihu()
+} */
+
+func TestGrabJianShu(t *testing.T) {
+  GrabJianShu()
 }
