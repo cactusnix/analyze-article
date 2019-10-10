@@ -15,10 +15,10 @@ func Analyze(articleName string) {
   wordCount := make(map[string]int)
   x := gojieba.NewJieba()
   defer x.Free()
-  use_hmm := true
+  useHmm := true
   filePath := "data/analyze_articles/" + articleName
   content := utils.ReadFileAsString(filePath)
-  words = x.Cut(content, use_hmm)
+  words = x.Cut(content, useHmm)
   // log.Info(words)
   excludes = utils.ReadFileByLine("data/stopwords/中文停用词表.txt")
   // log.Info(excludes)
